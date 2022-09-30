@@ -1,0 +1,46 @@
+{
+  "containers": [
+    {
+      "name": "yzhdxg",
+      "domain": "",
+      "ip": "",
+      "mode": "compose",
+      "containerId": "92fb1c401e6dea0de91c1356766af06a5fbef11eeb6e6d471581c2aafbec03ce"
+    }
+  ],
+  "config": {
+    "yzhdxg": {
+      "containerPort": 80,
+      "dockerfilePath": "Dockerfile",
+      "buildDir": "",
+      "minNum": 0,
+      "maxNum": 5,
+      "cpu": 1,
+      "mem": 2,
+      "policyType": "cpu",
+      "policyThreshold": 80,
+      "policyDetails": [
+        {
+          "PolicyType": "cpu",
+          "PolicyThreshold": 80
+        },
+        {
+          "PolicyType": "mem",
+          "PolicyThreshold": 80
+        }
+      ],
+      "envParams": {
+        "MYSQL_USERNAME": "root",
+        "MYSQL_PASSWORD": "6ejUgFJS",
+        "MYSQL_ADDRESS": "sh-cynosdbmysql-grp-8tjeuna4.sql.tencentcdb.com:27200"
+      },
+      "customLogs": "stdout",
+      "initialDelaySeconds": 2,
+      "dataBaseName": "nodejs_demo",
+      "executeSQLs": [
+        "CREATE DATABASE IF NOT EXISTS nodejs_demo;",
+        "USE nodejs_demo;"
+      ]
+    }
+  }
+}

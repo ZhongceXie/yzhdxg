@@ -12,10 +12,29 @@ app.use(express.json());
 app.use(cors());
 app.use(logger);
 
+const {sendMiniAppCard} = require("./service/wechatService")
+
 // 首页
 app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
+
+//微信推送
+app.post("/message", async (req, res) => {
+  
+  if(req && req.body.Event === "subscribe") {
+    console.log(req.body.ToUserName)
+    console.log(req.body.FromUserName)
+    sendMiniAppCard(req.body.FromUserName)
+
+    res.send({
+      code: 0,
+      data: "success",
+    });
+
+  }
+})
+
 
 // 更新计数
 app.post("/api/count", async (req, res) => {
@@ -57,5 +76,6 @@ async function bootstrap() {
     console.log("启动成功", port);
   });
 }
+
 
 bootstrap();
