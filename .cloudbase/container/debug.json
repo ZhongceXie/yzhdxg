@@ -4,8 +4,7 @@
       "name": "yzhdxg",
       "domain": "",
       "ip": "",
-      "mode": "compose",
-      "containerId": "92fb1c401e6dea0de91c1356766af06a5fbef11eeb6e6d471581c2aafbec03ce"
+      "mode": "compose"
     }
   ],
   "config": {
