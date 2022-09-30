@@ -17,10 +17,10 @@ sendMiniAppCard = (toUserName) => {
           
       })
       .then(function (response) {
-        console.log(response.body);
+        console.log(response);
       })
       .catch(function (error) {
-        console.log(error.body);
+        console.log(error);
       });
 }
 
