@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
 
 //微信推送
 app.post("/message", async (req, res) => {
-  console.log(req)
+  console.log(req.body)
 
   // if(req && req.body.Event === "subscribe") {
   //   console.log(req.body.ToUserName)
