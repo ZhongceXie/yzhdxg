@@ -21,18 +21,20 @@ app.get("/", async (req, res) => {
 
 //微信推送
 app.post("/message", async (req, res) => {
-  
-  if(req && req.body.Event === "subscribe") {
-    console.log(req.body.ToUserName)
-    console.log(req.body.FromUserName)
-    sendMiniAppCard(req.body.FromUserName)
+  console.log(req)
+
+  // if(req && req.body.Event === "subscribe") {
+  //   console.log(req.body.ToUserName)
+  //   console.log(req.body.FromUserName)
+  //   sendMiniAppCard(req.body.FromUserName)
+  // }
 
     res.send({
       code: 0,
       data: "success",
     });
 
-  }
+
 })
 
 
