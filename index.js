@@ -31,7 +31,7 @@ app.post("/message", async (req, res) => {
 
     res.send({
       code: 0,
-      data: req
+      data: req.body
     });
 
 
