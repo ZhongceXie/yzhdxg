@@ -23,18 +23,15 @@ app.get("/", async (req, res) => {
 app.post("/message", async (req, res) => {
   console.log(req.body)
 
-  // if(req && req.body.Event === "subscribe") {
-  //   console.log(req.body.ToUserName)
-  //   console.log(req.body.FromUserName)
-  //   sendMiniAppCard(req.body.FromUserName)
-  // }
+  if(req.body && req.body.Event === "subscribe") {
+    console.log("Subscribe")
+    sendMiniAppCard(req.body.FromUserName)
+  } 
 
     res.send({
       code: 0,
       data: req.body
     });
-
-
 })
 
 

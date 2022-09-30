@@ -9,7 +9,7 @@ sendMiniAppCard = (toUserName) => {
             "msgtype": "miniprogrampage",
             "miniprogrampage":
             {
-              "title": "测试",
+              "title": "商城：燕谷珍馐农场",
               "pagepath": "pages/index/index",
               "thumb_media_id": "XrfwjfAMf820PzHu9s5GYgOJbfbnoUucToD7A5HFbBM6_nU6TzR4EGkCFTTHLo0t"
             }
@@ -17,10 +17,10 @@ sendMiniAppCard = (toUserName) => {
           
       })
       .then(function (response) {
-        console.log(response);
+        console.log(response.body);
       })
       .catch(function (error) {
-        console.log(error);
+        console.log(error.body);
       });
 }
 
