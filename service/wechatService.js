@@ -12,8 +12,8 @@ sendMiniAppCard = (toUserName) => {
               "title": "商城：燕谷珍馐农场",
               "appid":"wx223dece5248f620e",
               "pagepath": "pages/index/index",
-              "thumb_media_id": "J1u3keFImkOcXwqB3Kovs6VxPAtBk6cqC9cC94yDAjuSrW65tX_rfuVRaJgJQGON",
-              "media_id": "J1u3keFImkOcXwqB3Kovs6VxPAtBk6cqC9cC94yDAjuSrW65tX_rfuVRaJgJQGON"
+              "thumb_media_id": "J1u3keFImkOcXwqB3Kovs-pMcbsHdxBx5EXtydx-VzILikaZ8Z6IUuDH1Udi1e7G",
+              "media_id": "J1u3keFImkOcXwqB3Kovs-pMcbsHdxBx5EXtydx-VzILikaZ8Z6IUuDH1Udi1e7G"
             }
           }
           
